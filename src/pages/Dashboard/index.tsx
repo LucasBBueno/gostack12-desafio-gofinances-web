@@ -91,7 +91,7 @@ const DashBoard: React.FC = () => {
             </Card>
           </CardContainer>
         )}
-        {transactions && (
+        {transactions.length > 0 ? (
           <TableContainer>
             <table>
               <thead>
@@ -118,6 +118,8 @@ const DashBoard: React.FC = () => {
               </tbody>
             </table>
           </TableContainer>
+        ) : (
+          <p className="noTransactions">Nenhuma transação encontrada</p>
         )}
       </Container>
     </>

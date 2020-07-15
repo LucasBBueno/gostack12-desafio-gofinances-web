@@ -9,6 +9,14 @@ export const Container = styled.div`
   max-width: 1120px;
   margin: 0 auto;
   padding: 40px 20px;
+
+  p {
+    &.noTransactions {
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+    }
+  }
 `;
 
 export const Title = styled.h1`
