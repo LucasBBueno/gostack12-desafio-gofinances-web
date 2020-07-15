@@ -4,7 +4,7 @@
 
 <h4 align="center">
 
-  A ReactJS application to import transactions and list
+  A ReactJS application to list and import transactions by a CSV file
 </h4>
 
 <p align="center">
