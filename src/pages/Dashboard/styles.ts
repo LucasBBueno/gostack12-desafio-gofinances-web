@@ -71,6 +71,16 @@ export const TableContainer = styled.section`
       line-height: 24px;
     }
 
+    tbody {
+      tr {
+        transition: transform 0.2s;
+
+        &:hover {
+          transform: translateX(2%);
+        }
+      }
+    }
+
     td {
       padding: 20px 32px;
       border: 0;
@@ -99,5 +109,22 @@ export const TableContainer = styled.section`
     td:last-child {
       border-radius: 0 8px 8px 0;
     }
+  }
+`;
+
+export const ExcludeButton = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #eb4d4b;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  width: 60px;
+  height: 30px;
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: scale(1.1);
   }
 `;
